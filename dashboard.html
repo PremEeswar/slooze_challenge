@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Dashboard</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<header>
+  <h2 id="welcome"></h2>
+  <button onclick="toggleTheme()">🌙</button>
+</header>
+
+<div class="container">
+
+  <div class="card">
+    <h3>Add Task</h3>
+    <input id="taskInput" placeholder="New task..." />
+    <button onclick="addTask()">Add</button>
+  </div>
+
+  <div class="card">
+    <h3>Search</h3>
+    <input id="search" onkeyup="renderTasks()" placeholder="Search task..." />
+  </div>
+
+  <div class="card">
+    <h3>Tasks</h3>
+    <ul id="taskList"></ul>
+  </div>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
